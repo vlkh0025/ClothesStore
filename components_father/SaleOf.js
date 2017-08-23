@@ -3,22 +3,12 @@ import {View, Text, Image, TouchableOpacity,StyleSheet} from 'react-native';
 
 export default class SaleOf extends Component{
 
-    static navigationOptions = {
-        drawerLabel: 'Item Sale',
-        drawerIcon: ({ tintColor }) => (
-          <Image
-            source={require('./../image/saleOf.png')}
-            style={[styles.icon, {tintColor: tintColor}]}
-          />
-        ),
-      };
-
     render(){
         return(
-        <View> 
-         
-                <Text>sale of</Text>
-       
+        <View>
+          <TouchableOpacity onPress={()=> this.props.navigation.goBack()}>
+            <Text>Go Back To Home</Text>
+          </TouchableOpacity>                         
         </View>
         );
     }

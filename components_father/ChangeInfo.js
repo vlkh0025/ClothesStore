@@ -4,21 +4,11 @@ import {View, Text, Image, TouchableOpacity,StyleSheet} from 'react-native';
 
 export default class ChangeInfo extends Component{
 
-    static navigationOptions = {
-        drawerLabel: 'Change Info',
-        drawerIcon: ({ tintColor }) => (
-          <Image
-            source={require('./../image/info.png')}
-            style={[styles.icon, {tintColor: tintColor}]}
-          />
-        ),
-      };
-
     render(){
         return(
             <View style={{flex:1, backgroundColor:'red'}}> 
-                <TouchableOpacity onPress={()=> this.props.navigation.navigate('History')}>
-                    <Text>go to history</Text>
+                <TouchableOpacity onPress={()=> this.props.navigation.goBack()}>
+                    <Text>Go Back To Home</Text>
                 </TouchableOpacity>
             </View>
         );
