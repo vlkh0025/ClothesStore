@@ -69,8 +69,8 @@ export default class Home extends Component{
 }
 const styles = StyleSheet.create({
     icon: {
-      width: 30,
-      height: 30,
+      width: 25,
+      height: 25,
     },
     
   });

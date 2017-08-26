@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
-import {View, Text, Image, TouchableOpacity,StyleSheet} from 'react-native';
+import {View, Text, Image, TouchableOpacity,StyleSheet,Dimensions} from 'react-native';
 import {MyAppDrawer} from './../App';
 
+var {height, width} = Dimensions.get('window');
 export default class Menu extends Component{
     render(){
         
         return(
    
-        <View style={{flex:1,padding:10}}>  
-            <View style={{flex:0.3, backgroundColor:'#00ffff'}}>
+        <View style={{width:width/1.5,marginVertical:10,padding:10}}>  
+            <View style={{height:height*0.4,backgroundColor:'#00ffff', padding:10, justifyContent:'center', alignItems:'center'}}>
+                <Image style ={{marginBottom:10,borderRadius: width*0.25,width:width*0.5, height:width*0.5}}source={require('./../image/linh.png')}/>
+                <Text style ={{fontSize:18, fontWeight:'bold'}}>Nhat Linh</Text>
             </View>      
             <View style={{padding:5}}>
                <TouchableOpacity style={{flexDirection:'row', alignItems:'center'}} onPress={()=> this.props.navigation.navigate('Home')}>

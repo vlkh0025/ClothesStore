@@ -18,8 +18,10 @@ export default class Header extends Component{
                             source={require('./../image/clothes.png')}
                     />
                 </View>
+                <View style={{marginTop:-5}}>
                 <TextInput style={textInput}
                 placeholder="What do you want to buy?"/>
+                </View>
             </View>
         )
     }
@@ -31,7 +33,7 @@ const styles = StyleSheet.create({
       height: 25,
     },
     wrapper:{
-        height:height/8,
+        height:height/7,
         padding:10,
         backgroundColor:'#24ffff',
         justifyContent:'space-between'
@@ -40,7 +42,7 @@ const styles = StyleSheet.create({
         flexDirection:'row', justifyContent:'space-between'
     },
     textInput:{
-        height:height/18,backgroundColor:'white',
+        height:height/18,backgroundColor:'white'
     },
     title:{
         fontFamily:'Avenir', fontSize:20, marginBottom:5
