@@ -9,7 +9,7 @@ import Home from './components_father/Home';
 import Menu from './components_father/Menu';
 
 var {height, width} = Dimensions.get('window');
-
+ 
 const MyAppDrawer = DrawerNavigator({
   
     Home:{
