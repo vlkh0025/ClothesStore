@@ -8,8 +8,7 @@ export default class Shop extends Component{
     render(){
         return(
             <View style={{flex:1}}>
-              <Collection/>
-              <Category/>
+              <TopProduct/>
             </View>
         );
     }
